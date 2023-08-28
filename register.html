@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      
+        <title>Sign up</title>
+        <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="register.css">
+    </head>
+    <body>
+        <header>
+            <img src="handlogo.jpg"  class="logo">
+            <nav class="top">
+                <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Sign up</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </nav>
+        </header>
+    <div class="middle">
+        <div class ="registration-form">
+            <h1>Sign Up</h1>
+            <form id="form" class="form">
+                <div class="box">
+                   <input type="text" id="Firstname" placeholder="First name" onfocusout="return firstNamevalid()">
+                   <small></small>
+                </div>
+                <div class="box">
+                    <input type="text" id="Lastname" placeholder="Last name" onfocusout="return lastNamevalid()">
+                    <small></small>
+                </div>
+                <div class="box">
+                    <label>Date of birth:</label>
+                    <input type="date" id="dateofbirth" placeholder="Date of birth" onfocusout="return dateofBirthvalid()">
+                    <small></small>
+                </div>
+                
+                <div class="box">
+                    <select id="Gender" onfocusout="return gendervalid()">
+                      <option value="">Select Gender</option>
+                      <option value="Gender">Female</option>
+                      <option value="Gender">Male</option>
+                      <option value="Gender">Trangender</option>
+                    </select>
+                    <small></small>
+                </div>
+                <div class="box">
+                    <input type="number" id="PhoneNumber" placeholder="Phone number" onfocusout="return phonevalid()" >
+                    <small></small>
+                </div>
+                <div class="box">
+                    <input type="email" id="email" placeholder="E-mail" onfocusout="return mailvalid()">
+                    <small></small>
+                </div>
+                <div class="box">                   
+                    <input type="text" id="Address" placeholder="Address" onfocusout="return addressvalid()">
+                    <small></small>
+                </div>
+                <div class="box">
+                   <label></label>
+                    <select id="State" onfocusout="return statevalid()">
+                    <option value="">Select State</option>
+                    <option value="AP">Andhra Pradesh</option>
+                    <option value="KKA">Karnataka</option>
+                    <option value="TN">Tamil Nadu</option>
+                    <option value="KL">Kerala</option>
+                    </select>
+                    
+                    <select name="city" id="city" placeholder="Select city"></select>
+                    <small></small>
+                </div>
+                <div class="box">
+                    
+                    <input type="text" id="Username" placeholder="Username" onfocusout="return usernamevalid()">
+                    <small></small>
+                    </div>
+                <div class="box">
+                     <input type="text" id="password" placeholder="Password">
+                     <small></small>
+                </div>
+                <div class="box">                   
+                     <input type="password" id="Password2" placeholder="Confirm password" onfocusout="return cpasswordvalid()">
+                     <small></small>
+                </div><br>      
+            </form>   
+            <button id="signup">Sign Up</button><br><br><br> 
+        </div>
+            <footer class="footer">
+                <div class="info">
+                    <div class="sociallinks">
+                        <ul>
+                        <li class="socialitem"><a href="">Facebook</li></a>
+                        <li class="socialitem"><a href="">Instagram</li></a> 
+                        <li class="socialitem"><a href="">linkedIn</li></a>         
+                       </ul>
+                    </div>
+                    <div class="quicklinks">
+                        <ul>
+                        <li class="quickitems"><a href="homepage2.html">Home</a></li>
+                        <li class="quickitems"><a href="login.html">Login</a></li>
+                        <li class="quickitems"><a href="register.html">Register</a></li>
+                        <li class="quickitems"><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                     </div>
+                    <div class="bottom">
+                        Copyright &copy;2023 Copyright by H&P. All Rights Reserved. 
+                    </div>
+
+                </div>
+            </footer>    
+    </div>
+        <script src="register.js"></script>
+ 
+    </body>
+</html>

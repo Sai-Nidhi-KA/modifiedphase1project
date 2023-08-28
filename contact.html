@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="contact.css">
+        
+    </head>
+    <body>
+        <header>
+            <img src="handlogo.jpg"  class="logo">
+            <nav class="top">
+                <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Sign up</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                </nav>
+           </header>
+    <div class="middle">
+        <div class="contact-us">
+            <h1>Contact Us</h1><br>
+            <h3>Get in touch with the right people at H&P. We’re here to help.</h3>
+        </div>
+            <div class="box2">
+                <div class="contact-form">
+                  <h3>Send us a message</h3>
+                       <form>
+                          <div class="row50">
+                             <div class="inputbox">
+                                <input type="text" id="firstName" placeholder="First name" onfocusout="return firstnamevalid()">
+                                <small></small>
+                             </div>
+                             <div class="inputbox">                              
+                                <input type="text" id ="lastName" placeholder="Last name" onfocusout="return lastnamevalid()">
+                                <small></small>
+                             </div>
+                          </div>
+                          <div class="row50">
+                              <div class="inputbox">                               
+                                 <input type="number" id="phone" placeholder="Phone" onfocusout="return phonevalid()">
+                                 <small></small>
+                              </div>
+                              <div class="inputbox">                                  
+                                  <input type="email" id="email" placeholder="E-mail" onfocusout="return emailvalid()">
+                                  <small></small>
+                              </div>
+                           </div>
+                           <div class="row50">
+                              <div class="inputbox">                   
+                                  <input type="text" id="msg" placeholder="Write your message" style="width: 80%;height: 100px;" onfocusout="return messagevalid()"> <br>
+                                   <small></small>
+                              </div>
+                            </div>
+                            <button id="btn" disabled>Sumbit</button>  
+                        </form> 
+                </div>
+                <div class="contact-info">
+                     <div class="content">
+                          <h1>Contact Information</h1>
+                          <p>Get 24x7 support</p>
+                     </div>
+                     <div class="text">
+                           <h2>Address</h2>
+                           <p>H&P company,2-block,plasa,ABCD Place,132452</p>
+                     </div>
+                     <div class="text">
+                          <h2>Email</h2>
+                           <p><a href="#">Handwritten@gmail.com</a></p>
+                     </div>
+                     <div class="text">
+                         <h2>Phone Numnber</h2>
+                         <p>1234567890</p>
+                      </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="info">
+                    <div class="sociallinks">
+                    <ul>
+                        <li class="socialitem"><a href="">Facebook</li></a>
+                        <li class="socialitem"><a href="">Instagram</li></a> 
+                        <li class="socialitem"><a href="">linkedIn</li></a>         
+                       </ul>
+                    </div>
+                    <div class="quicklinks">
+                        <ul>
+                        <li class="quickitems"><a href="homepage2.html">Home</a></li>
+                        <li class="quickitems"><a href="login.html">Login</a></li>
+                        <li class="quickitems"><a href="register.html">Register</a></li>
+                        <li class="quickitems"><a href="contact.html">Contact Us</a></li>
+                     </ul>
+                     </div>
+                     <div class="bottom">
+                        Copyright &copy;2023 Copyright by H&P. All Rights Reserved. 
+                    </div>
+
+                </div>
+            </footer>
+
+    </div>   
+        <script src="contact.js"></script>
+    </body>
+</html>
